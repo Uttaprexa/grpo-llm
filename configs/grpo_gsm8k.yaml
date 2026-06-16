@@ -1,0 +1,31 @@
+model:
+  name: "Qwen/Qwen2.5-1.5B-Instruct"
+  dtype: "bfloat16"
+
+training:
+  learning_rate: 1.0e-6
+  num_iterations: 500
+  batch_size: 32
+  gradient_accumulation_steps: 4
+  checkpoint_dir: "checkpoints/gsm8k"
+  log_interval: 10
+  eval_interval: 50
+
+grpo:
+  group_size: 8
+  epsilon: 0.2
+  beta: 0.01
+  max_new_tokens: 512
+  temperature: 0.9
+
+rollout:
+  num_workers: 4
+  rollout_batch_size: 16
+
+infrastructure:
+  use_fsdp: false
+  num_gpus: 1
+
+reward:
+  type: "binary"
+  format_bonus: 0.1

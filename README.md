@@ -1,5 +1,7 @@
 # GRPO-Based LLM Post-Training Framework
 
+Uttapreksha Patel | 2026
+
 A from-scratch implementation of **Group Relative Policy Optimization (GRPO)** for training large language models on math reasoning — built with production-grade infrastructure.
 
 Trains on GSM8K. No reward model required. Verifiable rewards only.

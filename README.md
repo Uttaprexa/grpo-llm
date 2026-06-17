@@ -1,4 +1,4 @@
-# grpo-llm
+# GRPO-Based LLM Post-Training Framework
 
 A from-scratch implementation of **Group Relative Policy Optimization (GRPO)** for training large language models on math reasoning — built with production-grade infrastructure.
 

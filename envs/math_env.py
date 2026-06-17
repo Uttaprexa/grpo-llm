@@ -19,7 +19,7 @@ def format_gsm8k_prompt(question: str) -> str:
 class GSM8KEnv:
     def __init__(self, split: str = "train", seed: int = 42):
         logger.info(f"Loading GSM8K {split} split...")
-        dataset = load_dataset("gsm8k", "main")[split]
+        dataset = load_dataset("openai/gsm8k", "main")[split]
         self.problems = list(dataset)
         self.reward_fn = GSM8KRewardFn(dataset)
         random.seed(seed)

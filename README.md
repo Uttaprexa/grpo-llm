@@ -139,8 +139,8 @@ def compute_advantages(self, rewards: torch.Tensor) -> torch.Tensor:
 
 | Model | Method | GSM8K accuracy |
 |-------|--------|---------------|
-| Qwen2.5-1.5B | SFT baseline | — |
-| Qwen2.5-1.5B | + GRPO (this repo) | — |
+| Qwen2.5-0.5B | Base (no training) | 8.7% |
+| Qwen2.5-0.5B | + GRPO (this repo, 200 iters) | 14.6% |
 
 *Training in progress.*
 

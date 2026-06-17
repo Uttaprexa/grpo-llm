@@ -131,7 +131,7 @@ def compute_advantages(self, rewards: torch.Tensor) -> torch.Tensor:
 | 4 | — | — | — |
 | 8 | — | — | — |
 
-*Training in progress — benchmark numbers coming soon.*
+*Training in progress | benchmark numbers coming soon.*
 
 ---
 
@@ -142,7 +142,6 @@ def compute_advantages(self, rewards: torch.Tensor) -> torch.Tensor:
 | Qwen2.5-0.5B | Base (no training) | 8.7% |
 | Qwen2.5-0.5B | + GRPO (this repo, 200 iters) | 14.6% |
 
-*Training in progress.*
 
 ---
 

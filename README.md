@@ -123,21 +123,6 @@ def compute_advantages(self, rewards: torch.Tensor) -> torch.Tensor:
 
 ---
 
-## Benchmarks
-
-*Run on NVIDIA H100. Results from `benchmarks/profile_rollout.py`.*
-
-| Workers | Rollouts/s | Tokens/s | GPU util |
-|---------|-----------|----------|----------|
-| 1 (sync) | — | — | — |
-| 2 | — | — | — |
-| 4 | — | — | — |
-| 8 | — | — | — |
-
-*Training in progress | benchmark numbers coming soon.*
-
----
-
 ## GSM8K Results
 
 | Model | Method | GSM8K accuracy |
@@ -160,6 +145,13 @@ same compute budget (300 iterations), same evaluation set.
 likely because the sparse binary reward signal limits the advantage of 
 online exploration for a 0.5B model on 300 iterations.
 
+
+---
+
+## Rollout Throughput
+
+Async Trio worker throughput benchmarks are run via
+`benchmarks/profile_rollout.py`. Results on multi-GPU setup coming soon.
 
 ---
 
